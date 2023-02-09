@@ -8,7 +8,6 @@
         "children": [
             "logo#header__top--logo",
             "header-spacer",
-            "login",
             "department-search",
             "modal-trigger#header__top--login",
             "minicart.v2"
@@ -20,26 +19,20 @@
     "logo#header__top--logo": {
         "title": "Logo",
         "props": {
-            "url": "assets/img/vtex-white-logo.svg",
+            "url": "assets/img/logo.png",
             "width": 120,
             "href": "/"
         }
     },
     "modal-trigger#header__top--login": {
         "children": [
-            "rich-text#header__top--login",
             "modal-layout#header__top--login"
         ]
-    },
-    "rich-text#header__top--login": {
-        "props": {
-            "text": "login"
-        }
     },
     "modal-layout#header__top--login": {
         "children": ["login-content"]
     },
-    "login": {
+    "login-content": {
         "props": {
             "emailAndPasswordTitle": "LOG-IN",
             "accessCodeTitle": "Acess Code LOG-IN",
@@ -71,6 +64,12 @@
             "MinicartIcon": "icon#home__orders--icon",
             "intemCountMode": "total",
             "quantityDisplay": "always"
+        }
+    },
+    "icon#home__orders--icon": {
+        "props": {
+            "id": "hpa-cart",
+            "size": 40
         }
     },
     "minicart-base-content": {

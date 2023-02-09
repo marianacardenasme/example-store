@@ -1,126 +1,18 @@
 {
   "store.home": { 
     "blocks": [
-      "custom-grid",
-      "quick-order",
       "whatsapp-button",
-      //"pdf-reader",
       "rich-text#home__container--texto",
-      "image#home__container--image",
-      "rich-text#home__list",
-      "rich-text#home__list2",
-      "slider-layout#home__slider--children",
+      "list-context.image-list#home__slider--list",
       "flex-layout.row#bullets",
-      //"list-context.image-list#home__slider--list",
-      // "modal-trigger#home__modal--children",
-      // "modal-trigger#home__modal--event",
-      "icon#home__orders--icon",
-      "search-result-layout.customQuery#home__search"
+      "image#home__container--image"
     ]
-  },
-  "custom-grid": {
-    "children": [
-      "rich-text#custom-grid-1",
-      "rich-text#custom-grid-2",
-      "rich-text#custom-grid-3",
-      "flex-layout.row#custom-grid-4"
-    ]
-  },
-  "rich-text#custom-grid-1": {
-    "props": {
-      "text": "Grilla 1"
-    }
-  },
-  "rich-text#custom-grid-2": {
-    "props": {
-      "text": "Grilla 2"
-    }
-  },
-  "rich-text#custom-grid-3": {
-    "props": {
-      "text": "Grilla 3"
-    }
-  },
-  "flex-layout.row#custom-grid-4": {
-    "children": [
-      "flex-layout.col#custom-grid-4"
-    ]
-  },
-  "flex-layout.col#custom-grid-4": {
-    "children": [
-      "rich-text#custom-grid-4",
-      "image#home__cat"
-    ]
-  },
-  "image#home__cat": {
-    "props": {
-      "src": "assets/img/gato_02.jpg",
-      "maxWidth": 200
-    }
-  },
-  "rich-text#custom-grid-4": {
-    "props": {
-      "text": "Grilla 4"
-    }
   },
   "whatsapp-button": {
     "props": {
-      "logo": "assets/img/whatsapp-logo.png",
+      "logo": "assets/img/whatsapp-icon.png",
       "phone": "3205029426",
       "message": "vtex phone"
-    }
-  },
-  // "pdf-reader":{
-  //   "props": {
-  //     "pdfUrl": "assets/documents/trial.pdf",
-  //     "width": 500,
-  //     "height": 500
-  //   }
-  // },
-  "modal-trigger#example": {
-    "children": [
-      "rich-text#example"
-    ]
-  },
-  "rich-text#example": {
-    "props": {
-      "text": "Soy un ejemplo"
-    }
-  },
-  "slider-layout#home__slider--children": {
-    "title": "slider con hijos declarados",
-    "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "mobile":1
-      },
-      "infinite": true,
-      "blockClass": "home__slider",
-      "autoplay": {
-        "timeout": 3000,
-        "stopOnHover": true
-      }
-    },
-    "children": [
-      "image#home__slider--one",
-      "image#home__slider--two",
-      "image#home__slider--three"
-    ]
-  },
-  "image#home__slider--one": {
-    "props": {
-      "src": "assets/img/main-slide-1.jpg"
-    }
-  },
-  "image#home__slider--two": {
-    "props": {
-      "src": "assets/img/main-slide-2.jpg"
-    }
-  },
-  "image#home__slider--three": {
-    "props": {
-      "src": "assets/img/main-slide-3.jpg"
     }
   },
   "list-context.image-list#home__slider--list": {
@@ -129,16 +21,19 @@
       "preload": true,
       "images": [
         {
-          "image": "assets/img/main-slide-1.jpg",
-          "description": "slide 1"
+          "image": "assets/img/slide1.png",
+          "description": "slide 1",
+          "maxHeight": 600
         },
         {
-          "image": "assets/img/main-slide-2.jpg",
-          "description": "slide 2"
+          "image": "assets/img/slide2.png",
+          "description": "slide 2",
+          "maxHeight": 600
         },
         {
-          "image": "assets/img/main-slide-3.jpg",
-          "description": "slide 3"
+          "image": "assets/img/slide3.png",
+          "description": "slide 3",
+          "maxHeight": 600
         }
       ]
     }
@@ -155,7 +50,7 @@
   },
   "image#home__container--image":{
     "props": {
-      "src": "assets/img/b2b-commerce-cover-desktop-1.jpg"
+      "src": "assets/img/mqa-photo.png"
     }
   },
   "flex-layout.row#bullets": {
@@ -167,57 +62,50 @@
     "props": {
       "bullets": [
         {
-          "image": "assets/img/portatil.png",
-          "titleBullet": "Computadores",
-          "link": {
-            "url": "/"
-          }
-        },
-        {
-          "image": "assets/img/ropa.png",
+          "image": "assets/img/gatito.png",
           "titleBullet": "Ropa",
           "link": {
             "url": "/"
           }
         },
         {
-          "image": "assets/img/portatil.png",
-          "titleBullet": "Computadores",
+          "image": "assets/img/gatito.png",
+          "titleBullet": "Zapatos",
           "link": {
             "url": "/"
           }
         },
         {
-          "image": "assets/img/ropa.png",
-          "titleBullet": "Ropa",
+          "image": "assets/img/gatito.png",
+          "titleBullet": "Lentes de sol",
           "link": {
             "url": "/"
           }
         },
         {
-          "image": "assets/img/portatil.png",
-          "titleBullet": "Computadores",
+          "image": "assets/img/gatito.png",
+          "titleBullet": "Bufandas",
           "link": {
             "url": "/"
           }
         },
         {
-          "image": "assets/img/ropa.png",
-          "titleBullet": "Ropa",
+          "image": "assets/img/gatito.png",
+          "titleBullet": "Sombreros",
           "link": {
             "url": "/"
           }
         },
         {
-          "image": "assets/img/portatil.png",
-          "titleBullet": "Computadores",
+          "image": "assets/img/gatito.png",
+          "titleBullet": "Correas",
           "link": {
             "url": "/"
           }
         },
         {
-          "image": "assets/img/ropa.png",
-          "titleBullet": "Ropa",
+          "image": "assets/img/gatito.png",
+          "titleBullet": "Joyería",
           "link": {
             "url": "/"
           }
@@ -228,80 +116,11 @@
   "slider-layout#bullet-group": {
     "props": {
       "itemsPerPage": {
-        "desktop": 5,
-        "tablet": 5,
-        "mobile": 5
+        "desktop": 4,
+        "tablet": 4,
+        "mobile": 4
       },
       "infinite": true
-    }
-  },
-  "icon#home__orders--icon": {
-    "props": {
-      "id": "marianaorders",
-      "size": 60
-    }
-  },
-  "search-result-layout.customQuery#home__search": {
-    "blocks": [
-      "search-result-layout.desktop#home_search--desktop", 
-      "search-result-layout.mobile#home_search--mobile",
-      "search-not-found-layout"
-    ],
-    "props": {
-      "querySchema": {
-        "skusFilter": "ALL",
-        "simulationBehavior": "skip"
-      }
-    }
-  },
-  "search-result-layout.desktop#home_search--desktop": {
-    "children": [
-      "flex-layout.row#home__result"
-    ]
-  },
-  "rich-text#test": { 
-    "title": "Texto de prueba",
-    "props": { 
-      "text": "Este es un mensaje de prueba",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-1"
-    }
-  },
-  "search-result-layout.mobile#home_search--mobile": {
-    "children": [
-      "flex-layout.row#home__result"
-    ]
-  },
-  "flex-layout.row#home__result": {
-    "children": [
-      "flex-layout.col#home__results--search"
-    ]
-  },
-  "flex-layout.col#home__results--search": {
-    "children": [
-      "search-content#home__results--search"
-    ]
-  },
-  "search-content#home__results--search":{
-    "blocks": [
-      "gallery",
-      "not-found"
-    ]
-  },
-  "gallery": {
-    "blocks": ["product-summary.shelf"]
-  },
-  "rich-text#home__list": {
-    "props": {
-      "blockClass": "home__list",
-      "text": " - Lista 1 \n - Lista 2 \n - Lista 3"
-    }
-  },
-  "rich-text#home__list2": {
-    "props": {
-      "blockClass": "home__list2",
-      "text": " - Lista 1 \n - Lista 2 \n - Lista 3"
     }
   }
 }

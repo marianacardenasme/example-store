@@ -1,6 +1,9 @@
 {
   "footer": {
-    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+    "blocks": [
+      "footer-layout.desktop", 
+      "footer-layout.mobile"
+    ]
   },
   "footer-layout.desktop": { 
     "children": [
@@ -13,10 +16,21 @@
     ]
   },
   "disclosure-layout-group#footer__menu--group": {
-  "children": [
-      "disclosure-layout#policies",
-      "disclosure-layout#about-us",
-      "disclosure-layout#socials"
+    "children": [
+      "flex-layout.row#footer__menu--group"
+    ]
+  },
+  "flex-layout.row#footer__menu--group": {
+    "children": [
+      "flex-layout.col#policies",
+      "flex-layout.col#about-us",
+      "flex-layout.col#socials",
+      "flex-layout.col#payment"
+      ]
+  },
+  "flex-layout.col#policies": {
+    "children": [
+      "disclosure-layout#policies"
     ]
   },
   "disclosure-layout#policies": {
@@ -30,7 +44,7 @@
   },
   "rich-text#policies": {
     "props": {
-      "title": "Políticas de la tienda"
+      "text": "Políticas de privacidad"
     }
   },
   "disclosure-content#policies": {
@@ -69,10 +83,15 @@
       }
     }
   },
+  "flex-layout.col#about-us": {
+    "children": [
+      "disclosure-layout#about-us"
+    ]
+  },
   "disclosure-layout#about-us": {
     "children": [
-      "disclosure-trigger#policies",
-      "disclosure-content#policies"
+      "disclosure-trigger#about-us",
+      "disclosure-content#about-us"
     ]
   },
   "disclosure-trigger#about-us": {
@@ -80,7 +99,7 @@
   },
   "rich-text#about-us": {
     "props": {
-      "title": "Políticas de la tienda"
+      "text": "Políticas de la tienda"
     }
   },
   "disclosure-content#about-us": {
@@ -119,11 +138,27 @@
       }
     }
   },
+  "flex-layout.col#socials": {
+    "children": [
+      "disclosure-layout#socials"
+    ]
+  },
   "disclosure-layout#socials": {
     "children": [
-      "social-networks",
-      "accepted-payment-methods"
+      "disclosure-trigger#socials",
+      "disclosure-content#socials"  
     ]
+  },
+  "disclosure-trigger#socials": {
+    "children": ["rich-text#socials"]
+  },
+  "rich-text#socials": {
+    "props": {
+      "text": "Redes sociales"
+    }
+  },
+  "disclosure-content#socials": {
+    "children": ["social-networks"]
   },
   "social-networks": {
     "props": {
@@ -143,11 +178,32 @@
       ]
     }
   },
+  
+  "flex-layout.col#payment": {
+    "children": [
+      "disclosure-layout#payment"
+    ]
+  },
+  "disclosure-layout#payment": {
+    "children": [
+      "disclosure-trigger#payment",
+      "disclosure-content#payment"
+    ]
+  },
+  "disclosure-trigger#payment": {
+    "children": ["rich-text#payment"]
+  },
+  "rich-text#payment": {
+    "props": {
+      "text": "Medios de pago"
+    }
+  },
+  "disclosure-content#payment": {
+    "children": ["accepted-payment-methods"]
+  },
   "accepted-payment-methods": {
     "props": {
       "paymentMethods": ["mastercard", "visa", "diners club"]
     }
   }
-
-
 }
