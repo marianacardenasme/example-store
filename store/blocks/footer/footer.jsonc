@@ -26,7 +26,7 @@
       "flex-layout.col#about-us",
       "flex-layout.col#socials",
       "flex-layout.col#payment"
-      ]
+    ]
   },
   "flex-layout.col#policies": {
     "children": [
@@ -40,7 +40,8 @@
     ]
   },
   "disclosure-trigger#policies": {
-    "children": ["rich-text#policies"]
+    "children": ["rich-text#policies"],
+    "props": {"blockClass": "footer-item"}
   },
   "rich-text#policies": {
     "props": {
@@ -95,7 +96,8 @@
     ]
   },
   "disclosure-trigger#about-us": {
-    "children": ["rich-text#about-us"]
+    "children": ["rich-text#about-us"],
+    "props": {"blockClass": "footer-item"}
   },
   "rich-text#about-us": {
     "props": {
@@ -150,7 +152,8 @@
     ]
   },
   "disclosure-trigger#socials": {
-    "children": ["rich-text#socials"]
+    "children": ["rich-text#socials"],
+    "props": {"blockClass": "footer-item"}
   },
   "rich-text#socials": {
     "props": {
@@ -191,7 +194,8 @@
     ]
   },
   "disclosure-trigger#payment": {
-    "children": ["rich-text#payment"]
+    "children": ["rich-text#payment"],
+    "props": {"blockClass": "footer-item"}
   },
   "rich-text#payment": {
     "props": {

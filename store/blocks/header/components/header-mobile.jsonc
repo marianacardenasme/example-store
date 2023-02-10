@@ -1,7 +1,10 @@
 {
     "header-layout.mobile": {
         "title": "Header Mobile",
-        "children": ["header-row#header__top", "header-row#header__middle"]
+        "children": [
+            "header-row#header__top", 
+            "header-row#header__middle"
+        ]
     },
     "header-row#header__top": {
         "title": "Header superior",
@@ -26,7 +29,8 @@
     },
     "modal-trigger#header__top--login": {
         "children": [
-            "modal-layout#header__top--login"
+            "modal-layout#header__top--login",
+            "rich-text#login"
         ]
     },
     "modal-layout#header__top--login": {
@@ -40,6 +44,11 @@
             "passwordPlaceholder": "password",
             "showPasswordVerificationIntoTooltip": true,
             "showIconProfile": true
+        }
+    },
+    "rich-text#login": {
+        "props": {
+            "text": "LOGIN"
         }
     },
     "header-row#header__middle": {

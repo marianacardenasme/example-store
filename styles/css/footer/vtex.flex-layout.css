@@ -1,0 +1,25 @@
+.flexRowContent--home__section--one {
+    background-color: brown;
+}
+
+.flexRow {
+    --main-text-color: green;
+    --main-background: black;
+}
+
+.flexColChild {
+    width: 25%;
+    background-color: orange;
+}
+
+.stretchChildrenWidth {
+    background-color: blue;
+    justify-content: center;
+    margin: 5px;
+}
+
+
+.paragraph {
+    color: blue;
+}
+
